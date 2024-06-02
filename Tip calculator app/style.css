@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    background: hsl(185, 41%, 84%);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    caret-color: transparent;
+}
+main{
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: left;
+}
+.container1{
+    padding: 10px;
+}
+.container2{
+    background: hsl(183, 100%, 15%);
+    border-radius: 15px;
+    padding: 20px;
+    margin-left: 20px;
+}
+.buttons{
+    width:260px;
+}
+.input-bill, .tips-div{
+    margin-bottom: 20px;
+}
+.result1, .result2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:240px;
+    margin-bottom: 10px;
+}
+.div-with-error{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+input, button{
+    font-family: "Space Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+    cursor: pointer;
+    border:none;
+    border-radius:5px;
+}
+button{
+    background: hsl(183, 100%, 15%);
+    color:white;
+    width:80px;
+    height: 35px;
+    margin-bottom: 10px;
+}
+.reset-btn{
+    background: hsl(186, 57%, 24%);
+    color:hsl(183, 100%, 15%);
+    width:240px;
+    margin-top:80px;
+    height: 35px;
+}
+input{
+    background: hsl(189, 41%, 97%);
+    outline: none;
+    padding: 10px;
+    color:hsl(183, 100%, 15%);
+    caret-color: auto;
+}
+input::placeholder{
+    color:hsl(183, 100%, 15%);
+}
+.bill, .num-of-ppl{
+    height:35px;
+    width:260px;
+    text-align:end
+}
+.custom{
+    border:none;
+    border-radius:5px;
+    width:80px;
+    height: 35px;
+}
+h1{
+    color:hsl(172, 67%, 45%);
+    font-size: 35px;
+}
+p{
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color:hsl(183, 100%, 15%);
+}
+.container2-paragraph{
+    color: white;
+    margin-bottom: 0px;
+}
+.opacity-change-paragraph{
+    opacity: 0.6;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+.error-txt{
+    color:red;
+    display: none;
+}
+.logo{
+    margin-bottom: 40px;
+}
+.icon-dollar, .icon-person{
+    position: absolute;
+    height:14px;
+    left:6%;
+    z-index: 1;
+}
+.icon-dollar{
+    top:37.5%
+}
+.icon-person{
+    top:87%
+}
+input:hover{
+    border:1px solid hsl(172, 67%, 45%);
+}
+button:hover{
+    background:hsl(185, 39%, 64%);
+  color:hsl(183, 100%, 15%);
+}
+button:focus{
+    color: hsl(183, 100%, 15%);
+    background: hsl(172, 67%, 45%);
+}
+@media(max-width:500px){
+    body{
+      padding-top: 180px;
+      padding-bottom: 40px;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container2{
+        margin-left: 0px;
+    }
+    button, .custom{
+        width:120px;
+        font-size: 17px;
+    }
+    input{
+        font-size: 17px;
+    }
+    .custom{
+        text-align: right;
+    }
+    .reset-btn{
+        margin-top: 10px;
+    }
+    .logo{
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 13px;
+    }
+    .icon-dollar{
+        top:36%;
+        left:12%
+    }
+    .icon-person{
+        left:12%;
+        top:65.5%
+    }
+}

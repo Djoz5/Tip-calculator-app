@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tip calculator app</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <img class="logo"  alt="logo" src="assets/images/logo.svg">
+        <main>
+           <div class="container1">
+               <div class="input-bill">
+                <p>Bill</p>
+                <img class="icon-dollar" alt="icon-dollar" src="assets/images/icon-dollar.svg">
+                <input class="bill" placeholder="0" type="text">
+               </div>
+               <div class="tips-div">
+                <p>Select Tip %</p>
+                 <div class="buttons">
+                    <button class="five">5%</button>
+                    <button class="ten">10%</button>
+                    <button class="fifteen">15%</button>
+                    <button class="twentyfive">25%</button>
+                    <button class="fifty">50%</button>
+                    <input class="custom" placeholder="Custom" type="text">
+                 </div>
+               </div>
+               <div class="input-people">
+                <div class="div-with-error">
+                    <p>Number of People</p>
+                    <p class="error-txt">Can't be zero</p>
+                </div>
+                <img class="icon-person" alt="icon-person" src="assets/images/icon-person.svg">
+                <input class="num-of-ppl" placeholder="0" type="text">
+               </div>
+           </div>
+           <div class="container2">
+            <div class="result1">
+                <div>
+                    <p class="container2-paragraph">Tip Amount</p>
+                    <p class="opacity-change-paragraph">/ person</p>
+                </div>
+                <h1 class="tip-amount">$0.00</h1>
+            </div>
+            <div class="result2">
+                <div>
+                    <p class="container2-paragraph">Total</p>
+                    <p class="opacity-change-paragraph">/ person</p>
+                </div>
+                <h1 class="total">$0.00</h1>
+            </div>
+            <button class="reset-btn">RESET</button>
+           </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
